@@ -13,6 +13,13 @@ export type ProductCategory = {
   image: string;
 };
 
+export type UsageScene = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+};
+
 export const heroCopy = {
   catch: "今日のご褒美に、ちょうどいい甘さ。",
   sub: "焼き菓子とケーキのお店 Impulsion",
@@ -59,6 +66,40 @@ export const assurancePoints = [
   "初めてのご来店でも、商品選びをスタッフが丁寧にご案内します。",
   "売り切れ状況をサイトで確認できるため、安心してご来店いただけます。",
   "手土産向けの詰め合わせ相談にも対応。用途に合わせた提案が可能です。",
+];
+
+export const firstVisitPoints = [
+  "お一人様でもお気軽にご来店いただけます",
+  "手土産や差し入れにもおすすめです",
+  "売り切れ次第終了となります",
+  "営業日はInstagramでもご確認いただけます",
+];
+
+export const usageScenes: UsageScene[] = [
+  {
+    id: "reward",
+    title: "自分へのご褒美に",
+    description: "一日の終わりに、やさしい甘さで気持ちをほどく時間に。",
+    image: "/images/scene-reward.svg",
+  },
+  {
+    id: "gift",
+    title: "手土産に",
+    description: "焼き菓子の詰め合わせは、気軽な差し入れにも好評です。",
+    image: "/images/scene-temiyage.svg",
+  },
+  {
+    id: "special",
+    title: "大切な人への贈り物に",
+    description: "特別な日にふさわしい、上品でやわらかな味わいを。",
+    image: "/images/scene-gift.svg",
+  },
+  {
+    id: "holiday",
+    title: "休日のおやつに",
+    description: "午後のひとときを、季節のケーキと一緒にゆったりと。",
+    image: "/images/scene-holiday.svg",
+  },
 ];
 
 export const storeInfo = {

@@ -34,7 +34,7 @@ export function HeroSection() {
               rel="noreferrer"
               className="rounded-full border border-[#6f5441] px-5 py-3 text-sm font-medium text-[#4c392d] transition hover:bg-[#eadacb]"
             >
-              アクセス
+              アクセスを見る
             </Link>
           </div>
         </div>

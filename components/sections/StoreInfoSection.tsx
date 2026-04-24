@@ -38,7 +38,7 @@ export function StoreInfoSection() {
               rel="noreferrer"
               className="rounded-full bg-[#4a3528] px-5 py-3 text-sm font-medium text-[#fffaf6]"
             >
-              アクセス
+              アクセスを見る
             </Link>
             <Link
               href={storeInfo.instagram}
@@ -46,7 +46,7 @@ export function StoreInfoSection() {
               rel="noreferrer"
               className="rounded-full border border-[#6f5441] px-5 py-3 text-sm font-medium text-[#4c392d]"
             >
-              Instagram
+              Instagramを見る
             </Link>
           </div>
         </div>
