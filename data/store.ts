@@ -8,8 +8,9 @@ export type BusinessDay = {
 
 export type ProductCategory = {
   id: string;
+  label: string;
   name: string;
-  description: string;
+  copy: string;
   image: string;
 };
 
@@ -20,8 +21,15 @@ export type UsageScene = {
   image: string;
 };
 
+export type InstagramMoodItem = {
+  id: string;
+  title: string;
+  caption: string;
+  image: string;
+};
+
 export const heroCopy = {
-  catch: "今日のご褒美に、ちょうどいい甘さ。",
+  catch: "今日のご褒美に、焼きたての甘さを。",
   sub: "焼き菓子とケーキのお店 Impulsion",
 };
 
@@ -44,21 +52,31 @@ export const businessCalendar: BusinessDay[] = [
 export const products: ProductCategory[] = [
   {
     id: "macaron",
+    label: "Macaron",
     name: "マカロン",
-    description: "季節のフレーバーを中心に、口どけの軽さを大切にした定番人気。",
-    image: "/images/product-macaron.svg",
+    copy: "軽やかな口どけと、季節の香り。",
+    image: "/images/macaron.svg",
   },
   {
     id: "baked",
+    label: "Baked sweets",
     name: "焼き菓子",
-    description: "毎朝焼き上げるフィナンシェ、マドレーヌ、カヌレ。手土産にも好評です。",
-    image: "/images/product-baked.svg",
+    copy: "手土産にも、自分へのご褒美にも。",
+    image: "/images/baked-sweets.svg",
   },
   {
     id: "cake",
+    label: "Cake",
     name: "ケーキ",
-    description: "その日のショーケース情報を営業日セクションで更新。売り切れ情報も掲載します。",
-    image: "/images/product-cake.svg",
+    copy: "その日のショーケースから選ぶ楽しみ。",
+    image: "/images/cake.svg",
+  },
+  {
+    id: "gift",
+    label: "Gift",
+    name: "ギフト",
+    copy: "大切な人へ、やさしい甘さを。",
+    image: "/images/gift.svg",
   },
 ];
 
@@ -79,27 +97,36 @@ export const usageScenes: UsageScene[] = [
   {
     id: "reward",
     title: "自分へのご褒美に",
-    description: "一日の終わりに、やさしい甘さで気持ちをほどく時間に。",
-    image: "/images/scene-reward.svg",
+    description: "頑張った日の終わりに、甘い余韻を。",
+    image: "/images/instagram-1.svg",
   },
   {
     id: "gift",
     title: "手土産に",
-    description: "焼き菓子の詰め合わせは、気軽な差し入れにも好評です。",
-    image: "/images/scene-temiyage.svg",
+    description: "気持ちが伝わる、やさしい詰め合わせ。",
+    image: "/images/instagram-5.svg",
   },
   {
     id: "special",
     title: "大切な人への贈り物に",
-    description: "特別な日にふさわしい、上品でやわらかな味わいを。",
-    image: "/images/scene-gift.svg",
+    description: "記念日に寄り添う、上品な甘さ。",
+    image: "/images/instagram-6.svg",
   },
   {
     id: "holiday",
     title: "休日のおやつに",
-    description: "午後のひとときを、季節のケーキと一緒にゆったりと。",
-    image: "/images/scene-holiday.svg",
+    description: "午後の光に似合う、小さな幸せ。",
+    image: "/images/instagram-3.svg",
   },
+];
+
+export const instagramMoodItems: InstagramMoodItem[] = [
+  { id: "i1", title: "生菓子", caption: "季節の果実を使ったショーケース。", image: "/images/instagram-1.svg" },
+  { id: "i2", title: "マカロン", caption: "色とりどりの軽やかな口どけ。", image: "/images/instagram-2.svg" },
+  { id: "i3", title: "焼き菓子", caption: "焼きたての香りを、そのまま。", image: "/images/instagram-3.svg" },
+  { id: "i4", title: "カレンダー投稿", caption: "営業日と売り切れ情報を更新。", image: "/images/instagram-4.svg" },
+  { id: "i5", title: "ギフト", caption: "手土産に選ばれる定番。", image: "/images/instagram-5.svg" },
+  { id: "i6", title: "店舗の雰囲気", caption: "ふらっと立ち寄れる小さなお店。", image: "/images/instagram-6.svg" },
 ];
 
 export const storeInfo = {

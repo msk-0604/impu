@@ -4,38 +4,39 @@ import { heroCopy, storeInfo } from "@/data/store";
 
 export function HeroSection() {
   return (
-    <section className="px-5 pt-6 pb-10 md:px-10 md:pt-10">
-      <div className="mx-auto grid w-full max-w-6xl gap-8 overflow-hidden rounded-3xl bg-[#efe1d3] p-5 md:grid-cols-2 md:p-10">
-        <div className="relative h-72 overflow-hidden rounded-2xl md:h-full">
+    <section className="px-5 pt-5 pb-10 md:px-10 md:pt-9">
+      <div className="mx-auto w-full max-w-6xl overflow-hidden rounded-[28px] border border-[#e8d8ce] bg-[#fffaf3] shadow-[0_22px_54px_rgba(63,45,40,0.12)]">
+        <div className="relative h-[530px] md:h-[620px]">
           <Image
-            src="/images/hero-cake.svg"
+            src="/images/hero-sweets.svg"
             alt="Impulsion の焼き菓子とケーキ"
             fill
             className="object-cover"
             priority
           />
-        </div>
-        <div className="flex flex-col justify-center gap-6">
-          <p className="text-xs tracking-[0.22em] text-[#7f6550]">PÂTISSERIE IMPULSION</p>
-          <h1 className="text-3xl leading-tight font-semibold text-[#2f241d] md:text-5xl">
-            {heroCopy.catch}
-          </h1>
-          <p className="text-sm leading-7 text-[#574438] md:text-base">{heroCopy.sub}</p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="#business-days"
-              className="rounded-full bg-[#4a3528] px-5 py-3 text-sm font-medium text-[#fffaf6] transition hover:opacity-90"
-            >
-              営業日を見る
-            </Link>
-            <Link
-              href={storeInfo.mapUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border border-[#6f5441] px-5 py-3 text-sm font-medium text-[#4c392d] transition hover:bg-[#eadacb]"
-            >
-              アクセスを見る
-            </Link>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#fffaf3]/95 via-[#fffaf3]/62 to-[#fffaf3]/22" />
+          <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
+            <div className="max-w-xl space-y-5">
+              <p className="text-xs tracking-[0.24em] text-[#7a5548] uppercase">Patisserie Impulsion</p>
+              <h1 className="font-serif text-3xl leading-tight text-[#3f2d28] md:text-5xl">{heroCopy.catch}</h1>
+              <p className="text-sm leading-7 text-[#7a5548] md:text-base">{heroCopy.sub}</p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="#today-open"
+                  className="rounded-full bg-[#7a5548] px-6 py-3 text-sm font-medium text-[#fffaf3] transition hover:opacity-90"
+                >
+                  本日の営業を見る
+                </Link>
+                <Link
+                  href={storeInfo.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-[#7a5548] bg-[#fffaf3]/90 px-6 py-3 text-sm font-medium text-[#7a5548] transition hover:bg-[#fff3e9]"
+                >
+                  Instagramを見る
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

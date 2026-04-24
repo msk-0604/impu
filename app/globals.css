@@ -1,14 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f0e8;
-  --foreground: #2f241d;
+  --color-ivory: #fffaf3;
+  --color-cream: #f7eadc;
+  --color-pink: #ead1ca;
+  --color-mocha: #7a5548;
+  --color-brown: #3f2d28;
+  --color-line: #e8d8ce;
+  --background: var(--color-ivory);
+  --foreground: var(--color-brown);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-noto-serif-jp);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -23,4 +30,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  letter-spacing: 0.01em;
 }

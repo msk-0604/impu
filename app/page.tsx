@@ -4,6 +4,7 @@ import { BusinessDaysSection } from "@/components/sections/BusinessDaysSection";
 import { DemoValueSection } from "@/components/sections/DemoValueSection";
 import { Footer } from "@/components/sections/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { InstagramMoodSection } from "@/components/sections/InstagramMoodSection";
 import { InstagramSection } from "@/components/sections/InstagramSection";
 import { ProductsSection } from "@/components/sections/ProductsSection";
 import { AssuranceSection } from "@/components/sections/AssuranceSection";
@@ -23,6 +24,9 @@ export default async function Home() {
       </GsapReveal>
       <GsapReveal>
         <BusinessDaysSection />
+      </GsapReveal>
+      <GsapReveal>
+        <InstagramMoodSection />
       </GsapReveal>
       <GsapReveal>
         <ProductsSection />

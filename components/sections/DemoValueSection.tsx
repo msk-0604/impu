@@ -10,11 +10,11 @@ const demoValuePoints = [
 export function DemoValueSection() {
   return (
     <section className="px-5 py-12 md:px-10 md:py-18">
-      <div className="mx-auto w-full max-w-6xl rounded-3xl border border-[#dbc7b3] bg-[#f3e8dc] p-6 md:p-9">
+      <div className="mx-auto w-full max-w-6xl rounded-[26px] border border-[#e8d8ce] bg-[#f7eadc] p-6 md:p-9">
         <SectionTitle
-          eyebrow="OFFICIAL WEBSITE VALUE"
-          title="このサイトで、来店前の不安を減らす。"
-          description="ただ綺麗なだけではなく、来店前に知りたい情報を整理し、安心してお店に向かえる公式サイトとして設計しています。"
+          eyebrow="GUIDE FOR YOUR VISIT"
+          title="はじめての来店を、もっとやさしく。"
+          description="Instagramの世界観はそのままに、来店前に知りたい情報を公式サイトとして整えます。"
         />
         <ul className="mt-6 grid gap-3 md:grid-cols-2">
           {demoValuePoints.map((point) => (

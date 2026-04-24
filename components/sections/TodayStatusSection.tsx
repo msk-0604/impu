@@ -4,18 +4,20 @@ import { storeInfo } from "@/data/store";
 
 export function TodayStatusSection() {
   return (
-    <section className="px-5 py-6 md:px-10 md:py-8">
-      <div className="mx-auto w-full max-w-6xl rounded-3xl border border-[#dbc7b3] bg-[#fdf8f2] p-5 md:p-7">
-        <SectionTitle eyebrow="TODAY STATUS" title="今日の営業状況" />
-        <div className="mt-5 rounded-2xl bg-[#eadbcd] p-5 md:p-6">
-          <p className="text-base font-semibold text-[#2f241d]">本日営業しています</p>
-          <p className="mt-1 text-lg font-semibold text-[#2f241d]">11:00〜18:00</p>
-          <p className="mt-1 text-sm text-[#554236]">売り切れ次第終了</p>
-          <p className="mt-3 text-xs text-[#6a5547]">最新情報はInstagramをご確認ください。</p>
-          <div className="mt-4 flex flex-wrap gap-3">
+    <section id="today-open" className="px-5 py-6 md:px-10 md:py-8">
+      <div className="mx-auto w-full max-w-6xl rounded-[26px] border border-[#e8d8ce] bg-[#fffaf3] p-5 md:p-7">
+        <SectionTitle eyebrow="TODAY'S OPEN STATUS" title="本日の営業" />
+        <div className="mt-5 rounded-[24px] border border-[#ead1ca] bg-[linear-gradient(135deg,#fffaf3_0%,#f7eadc_100%)] p-6 md:p-7">
+          <span className="inline-flex rounded-full border border-[#ead1ca] bg-[#fff] px-4 py-1 text-[11px] tracking-[0.18em] text-[#7a5548] uppercase">
+            Open
+          </span>
+          <p className="mt-4 font-serif text-3xl leading-tight text-[#3f2d28] md:text-4xl">11:00〜18:00</p>
+          <p className="mt-2 text-sm text-[#7a5548]">売り切れ次第終了</p>
+          <p className="mt-4 text-xs text-[#7a5548]">ご来店前にInstagramの最新投稿もご確認ください。</p>
+          <div className="mt-5 flex flex-wrap gap-3">
             <Link
               href="#business-days"
-              className="rounded-full bg-[#4a3528] px-5 py-3 text-sm font-medium text-[#fffaf6] transition hover:opacity-90"
+              className="rounded-full bg-[#7a5548] px-5 py-3 text-sm font-medium text-[#fffaf3] transition hover:opacity-90"
             >
               営業日を見る
             </Link>
@@ -23,7 +25,7 @@ export function TodayStatusSection() {
               href={storeInfo.mapUrl}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-[#6f5441] px-5 py-3 text-sm font-medium text-[#4c392d] transition hover:bg-[#eadacb]"
+              className="rounded-full border border-[#ead1ca] bg-[#fffaf3] px-5 py-3 text-sm font-medium text-[#7a5548] transition hover:bg-[#fff1e6]"
             >
               アクセスを見る
             </Link>
