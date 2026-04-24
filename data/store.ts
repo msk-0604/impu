@@ -28,6 +28,12 @@ export type InstagramMoodItem = {
   image: string;
 };
 
+export const brandStory = {
+  title: "小さな幸せを、ひとつずつ。",
+  text: "焼きたての香り、季節の素材、手に取った時のうれしさ。Impulsionのお菓子は、日常の中に少しだけ特別な時間を届けます。",
+  image: "/images/brand-story.svg",
+};
+
 export const heroCopy = {
   catch: "今日のご褒美に、焼きたての甘さを。",
   sub: "焼き菓子とケーキのお店 Impulsion",
@@ -35,7 +41,7 @@ export const heroCopy = {
 
 export const businessNotice = {
   statusLabel: "本日営業",
-  detail: "11:00 - 売り切れ次第終了",
+  detail: "11:00〜18:00",
   caution: "※ 焼き上がり状況により、閉店時間が早まる場合があります。",
 };
 
@@ -121,12 +127,12 @@ export const usageScenes: UsageScene[] = [
 ];
 
 export const instagramMoodItems: InstagramMoodItem[] = [
-  { id: "i1", title: "生菓子", caption: "季節の果実を使ったショーケース。", image: "/images/instagram-1.svg" },
-  { id: "i2", title: "マカロン", caption: "色とりどりの軽やかな口どけ。", image: "/images/instagram-2.svg" },
-  { id: "i3", title: "焼き菓子", caption: "焼きたての香りを、そのまま。", image: "/images/instagram-3.svg" },
-  { id: "i4", title: "カレンダー投稿", caption: "営業日と売り切れ情報を更新。", image: "/images/instagram-4.svg" },
-  { id: "i5", title: "ギフト", caption: "手土産に選ばれる定番。", image: "/images/instagram-5.svg" },
-  { id: "i6", title: "店舗の雰囲気", caption: "ふらっと立ち寄れる小さなお店。", image: "/images/instagram-6.svg" },
+  { id: "i1", title: "Macaron", caption: "色とりどりの軽やかな口どけ。", image: "/images/instagram-2.svg" },
+  { id: "i2", title: "Cake", caption: "季節の果実を使ったショーケース。", image: "/images/instagram-1.svg" },
+  { id: "i3", title: "Baked sweets", caption: "焼きたての香りを、そのまま。", image: "/images/instagram-3.svg" },
+  { id: "i4", title: "Gift", caption: "手土産に選ばれる定番。", image: "/images/instagram-5.svg" },
+  { id: "i5", title: "Calendar", caption: "営業日と売り切れ情報を更新。", image: "/images/instagram-4.svg" },
+  { id: "i6", title: "Shop mood", caption: "ふらっと立ち寄れる小さなお店。", image: "/images/instagram-6.svg" },
 ];
 
 export const storeInfo = {

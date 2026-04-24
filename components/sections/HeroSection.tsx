@@ -4,9 +4,9 @@ import { heroCopy, storeInfo } from "@/data/store";
 
 export function HeroSection() {
   return (
-    <section className="px-5 pt-5 pb-10 md:px-10 md:pt-9">
-      <div className="mx-auto w-full max-w-6xl overflow-hidden rounded-[28px] border border-[#e8d8ce] bg-[#fffaf3] shadow-[0_22px_54px_rgba(63,45,40,0.12)]">
-        <div className="relative h-[530px] md:h-[620px]">
+    <section id="top" className="px-5 pt-5 pb-12 md:px-10 md:pt-9 md:pb-14">
+      <div className="mx-auto w-full max-w-6xl overflow-hidden rounded-[28px] border border-[#e8d8ce] bg-[#fffaf3] shadow-[0_24px_60px_rgba(63,45,40,0.14)]">
+        <div className="relative h-[560px] md:h-[680px]">
           <Image
             src="/images/hero-sweets.svg"
             alt="Impulsion の焼き菓子とケーキ"
@@ -14,11 +14,11 @@ export function HeroSection() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#fffaf3]/95 via-[#fffaf3]/62 to-[#fffaf3]/22" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#fffaf3]/96 via-[#fffaf3]/64 to-[#fffaf3]/16" />
           <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
             <div className="max-w-xl space-y-5">
-              <p className="text-xs tracking-[0.24em] text-[#7a5548] uppercase">Patisserie Impulsion</p>
-              <h1 className="font-serif text-3xl leading-tight text-[#3f2d28] md:text-5xl">{heroCopy.catch}</h1>
+              <p className="text-xs tracking-[0.24em] text-[#7a5548] uppercase">Baked sweets & cakes</p>
+              <h1 className="font-serif text-4xl leading-tight text-[#3f2d28] md:text-6xl">{heroCopy.catch}</h1>
               <p className="text-sm leading-7 text-[#7a5548] md:text-base">{heroCopy.sub}</p>
               <div className="flex flex-wrap gap-3">
                 <Link

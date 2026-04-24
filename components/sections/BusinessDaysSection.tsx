@@ -22,7 +22,7 @@ export function BusinessDaysSection() {
           title="営業カレンダー"
           description="売り切れ次第終了のため、最新の営業情報をご確認ください。"
         />
-        <div className="mt-6 flex flex-col gap-3 rounded-[20px] border border-[#ead1ca] bg-[#fff6ee] p-5">
+        <div className="mt-6 flex flex-col gap-3 rounded-[22px] border border-[#ead1ca] bg-[linear-gradient(135deg,#fffaf3_0%,#fff2e8_100%)] p-6">
           <p className="text-xs tracking-[0.16em] text-[#7a5548] uppercase">{businessNotice.statusLabel}</p>
           <p className="font-serif text-2xl text-[#3f2d28]">{businessNotice.detail}</p>
           <p className="text-xs text-[#7a5548]">{businessNotice.caution}</p>
@@ -31,7 +31,7 @@ export function BusinessDaysSection() {
           {businessCalendar.map((day) => (
             <article
               key={day.date}
-              className="min-w-[220px] rounded-2xl border border-[#e8d8ce] bg-[#fff] p-4 shadow-[0_8px_18px_rgba(63,45,40,0.06)]"
+              className="min-w-[220px] rounded-2xl border border-[#e8d8ce] bg-[#fff] p-4 shadow-[0_8px_18px_rgba(63,45,40,0.06)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_26px_rgba(63,45,40,0.1)]"
             >
               <p className="text-sm font-medium text-[#3f2d28]">{day.date}</p>
               <span className={`mt-2 inline-flex rounded-full px-3 py-1 text-[11px] font-semibold ${statusClassName[day.status]}`}>

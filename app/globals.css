@@ -32,3 +32,33 @@ body {
   font-family: var(--font-geist-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   letter-spacing: 0.01em;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #ead1ca;
+  color: #3f2d28;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #7a5548;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

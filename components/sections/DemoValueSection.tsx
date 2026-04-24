@@ -9,10 +9,10 @@ const demoValuePoints = [
 
 export function DemoValueSection() {
   return (
-    <section className="px-5 py-12 md:px-10 md:py-18">
+    <section id="contact" className="px-5 py-12 md:px-10 md:py-18">
       <div className="mx-auto w-full max-w-6xl rounded-[26px] border border-[#e8d8ce] bg-[#f7eadc] p-6 md:p-9">
         <SectionTitle
-          eyebrow="GUIDE FOR YOUR VISIT"
+          eyebrow="CONTACT"
           title="はじめての来店を、もっとやさしく。"
           description="Instagramの世界観はそのままに、来店前に知りたい情報を公式サイトとして整えます。"
         />

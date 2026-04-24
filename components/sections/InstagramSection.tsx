@@ -17,19 +17,19 @@ export function InstagramSection({ news }: InstagramSectionProps) {
           description="Instagram運用に加えて、営業・売り切れ・お知らせをこのページにも反映します。"
         />
         <div className="mt-7 grid gap-5 md:grid-cols-2">
-          <div className="rounded-2xl bg-[#fdf8f2] p-5 shadow-[0_16px_38px_rgba(58,38,25,0.12)]">
-            <p className="text-sm font-medium text-[#4e3b30]">最新のお知らせ</p>
+          <div className="rounded-[24px] border border-[#e8d8ce] bg-[#fffaf3] p-5 shadow-[0_12px_28px_rgba(58,38,25,0.1)]">
+            <p className="text-xs tracking-[0.16em] text-[#7a5548] uppercase">Latest updates</p>
             <ul className="mt-3 space-y-2">
               {news.map((item) => (
-                <li key={item.id} className="rounded-xl border border-[#dfccba] px-3 py-2 text-sm text-[#554236]">
+                <li key={item.id} className="rounded-xl border border-[#ead1ca] bg-[#fff6ee] px-3 py-2 text-sm text-[#554236]">
                   {item.title}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="flex flex-col justify-between rounded-2xl bg-[#e8d8c8] p-5">
+          <div className="flex flex-col justify-between rounded-[24px] border border-[#ead1ca] bg-[linear-gradient(135deg,#f7eadc_0%,#ead1ca_100%)] p-5">
             <div>
-              <p className="text-sm font-medium text-[#4e3b30]">公式Instagram</p>
+              <p className="text-xs tracking-[0.16em] text-[#7a5548] uppercase">Official instagram</p>
               <p className="mt-2 text-sm leading-7 text-[#554236]">
                 新作、当日ラインナップ、売り切れ情報を投稿しています。
               </p>
