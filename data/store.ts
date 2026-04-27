@@ -68,7 +68,7 @@ export const products: ProductCategory[] = [
     label: "Baked sweets",
     name: "焼き菓子",
     copy: "手土産にも、自分へのご褒美にも。",
-    image: "/images/baked-sweets.svg",
+    image: "/images/matcha-muffin.png",
   },
   {
     id: "cake",
@@ -129,7 +129,7 @@ export const usageScenes: UsageScene[] = [
 export const instagramMoodItems: InstagramMoodItem[] = [
   { id: "i1", title: "Macaron", caption: "色とりどりの軽やかな口どけ。", image: "/images/instagram-2.svg" },
   { id: "i2", title: "Cake", caption: "季節の果実を使ったショーケース。", image: "/images/instagram-1.svg" },
-  { id: "i3", title: "Baked sweets", caption: "焼きたての香りを、そのまま。", image: "/images/instagram-3.svg" },
+  { id: "i3", title: "Baked sweets", caption: "焼きたての香りを、そのまま。", image: "/images/matcha-muffin.png" },
   { id: "i4", title: "Gift", caption: "手土産に選ばれる定番。", image: "/images/instagram-5.svg" },
   { id: "i5", title: "Calendar", caption: "営業日と売り切れ情報を更新。", image: "/images/instagram-4.svg" },
   { id: "i6", title: "Shop mood", caption: "ふらっと立ち寄れる小さなお店。", image: "/images/instagram-6.svg" },
