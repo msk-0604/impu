@@ -35,7 +35,7 @@ export const brandStory = {
 };
 
 export const heroCopy = {
-  catch: "今日のご褒美に、焼きたての甘さを。",
+  catch: "丁寧に焼き上げた、日常に寄り添う焼き菓子",
   sub: "焼き菓子とケーキのお店 Impulsion",
 };
 
@@ -138,8 +138,7 @@ export const instagramMoodItems: InstagramMoodItem[] = [
 export const storeInfo = {
   address: "大阪府東大阪市菱屋東 1-1-31 フローラ21",
   businessHours: "11:00 - 売り切れ次第終了（不定休）",
-  phone: "電話番号は準備中（Instagram DMでお問い合わせください）",
   station: "河内花園駅から徒歩約3分",
   mapUrl: "https://maps.google.com/?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E8%8F%B1%E5%B1%8B%E6%9D%B11-1-31",
-  instagram: "https://www.instagram.com/impulsion_2025/",
+  instagram: "https://www.instagram.com/impu_mocha",
 };

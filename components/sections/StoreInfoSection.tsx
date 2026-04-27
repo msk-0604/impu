@@ -7,8 +7,8 @@ export function StoreInfoSection() {
     <section id="shop" className="px-5 py-12 md:px-10 md:py-18">
       <div className="mx-auto grid w-full max-w-6xl gap-6 rounded-[26px] border border-[#e8d8ce] bg-[#fffaf3] p-6 md:grid-cols-2 md:p-9">
         <div>
-          <SectionTitle eyebrow="SHOP" title="店舗情報" description="初めての方でも迷わず来店いただける情報をまとめています。" />
-          <dl className="mt-6 space-y-3 text-sm text-[#4f3d31]">
+          <SectionTitle title="店舗情報" description="初めての方でも迷わず来店いただける情報をまとめています。" />
+          <dl className="mt-6 space-y-3 text-base text-[#4f3d31]">
             <div>
               <dt className="font-semibold text-[#2f241d]">住所</dt>
               <dd>{storeInfo.address}</dd>
@@ -18,17 +18,13 @@ export function StoreInfoSection() {
               <dd>{storeInfo.businessHours}</dd>
             </div>
             <div>
-              <dt className="font-semibold text-[#2f241d]">電話</dt>
-              <dd>{storeInfo.phone}</dd>
-            </div>
-            <div>
               <dt className="font-semibold text-[#2f241d]">アクセス</dt>
               <dd>{storeInfo.station}</dd>
             </div>
           </dl>
         </div>
         <div className="flex flex-col justify-center rounded-[24px] border border-[#ead1ca] bg-[linear-gradient(135deg,#f7eadc_0%,#ead1ca_100%)] p-5">
-          <p className="text-sm leading-7 text-[#554236]">
+          <p className="text-base leading-7 text-[#554236]">
             ご来店前に営業日・売り切れ情報をご確認いただくことで、安心してお越しいただけます。
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
@@ -36,7 +32,7 @@ export function StoreInfoSection() {
               href={storeInfo.mapUrl}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-[#7a5548] px-5 py-3 text-sm font-medium text-[#fffaf6]"
+              className="rounded-lg bg-[#7a5548] px-5 py-3 text-base font-medium text-[#fffaf6]"
             >
               アクセスを見る
             </Link>
@@ -44,7 +40,7 @@ export function StoreInfoSection() {
               href={storeInfo.instagram}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-[#ead1ca] bg-[#fffaf3] px-5 py-3 text-sm font-medium text-[#7a5548]"
+              className="rounded-lg border border-[#ead1ca] bg-[#fffaf3] px-5 py-3 text-base font-medium text-[#7a5548]"
             >
               Instagramを見る
             </Link>

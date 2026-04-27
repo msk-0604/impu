@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 const navItems = [
-  { href: "#top", label: "TOP" },
-  { href: "#product", label: "GRAND MENU" },
-  { href: "#shop", label: "SHOP" },
-  { href: "#concept", label: "ABOUT" },
-  { href: "#contact", label: "CONTACT" },
+  { href: "#top", label: "トップ" },
+  { href: "#product", label: "商品" },
+  { href: "#business-days", label: "営業日" },
+  { href: "#shop", label: "店舗情報" },
+  { href: "#contact", label: "お問い合わせ" },
 ];
 
 export function Header() {
