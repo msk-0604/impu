@@ -8,7 +8,7 @@ export function InstagramMoodSection() {
       <div className="mx-auto w-full max-w-6xl">
         <SectionTitle
           eyebrow="INSTAGRAM STYLE"
-          title="Instagramの雰囲気を、そのまま公式サイトへ。"
+          title="Instagram"
           description="季節のお菓子、営業日、売り切れ情報まで。Instagramで流れてしまう情報を、見やすく整理します。"
         />
         <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
