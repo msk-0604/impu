@@ -8,7 +8,6 @@ import { Footer } from "@/components/sections/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { InstagramMoodSection } from "@/components/sections/InstagramMoodSection";
 import { InstagramSection } from "@/components/sections/InstagramSection";
-import { OnlineShopSection } from "@/components/sections/OnlineShopSection";
 import { ProductsSection } from "@/components/sections/ProductsSection";
 import { StoreInfoSection } from "@/components/sections/StoreInfoSection";
 import { TodayStatusSection } from "@/components/sections/TodayStatusSection";
@@ -43,9 +42,6 @@ export default async function Home() {
         </GsapReveal>
         <GsapReveal>
           <StoreInfoSection />
-        </GsapReveal>
-        <GsapReveal>
-          <OnlineShopSection />
         </GsapReveal>
         <GsapReveal>
           <DemoValueSection />

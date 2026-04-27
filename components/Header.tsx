@@ -7,7 +7,6 @@ const navItems = [
   { href: "#top", label: "TOP" },
   { href: "#product", label: "GRAND MENU" },
   { href: "#shop", label: "SHOP" },
-  { href: "#online-shop", label: "ONLINE SHOP" },
   { href: "#concept", label: "ABOUT" },
   { href: "#contact", label: "CONTACT" },
 ];
