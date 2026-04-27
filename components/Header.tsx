@@ -67,7 +67,7 @@ export function Header() {
               key={item.href}
               href={item.href}
               aria-current={activeHref === item.href ? "page" : undefined}
-              className={`rounded-full border px-4 py-2 text-[11px] font-medium tracking-[0.08em] whitespace-nowrap transition ${
+              className={`rounded-lg border px-4 py-2 text-base font-medium whitespace-nowrap transition ${
                 activeHref === item.href
                   ? "border-[#7a5548] bg-[#7a5548] text-[#fffaf3]"
                   : "border-[#ead1ca] bg-[#fff6ee] text-[#7a5548] hover:bg-[#f7eadc]"
@@ -87,7 +87,7 @@ export function Header() {
                 href={item.href}
                 onClick={closeMenu}
                 aria-current={activeHref === item.href ? "page" : undefined}
-                className={`rounded-xl border px-3 py-3 text-center text-xs font-medium tracking-[0.06em] ${
+                className={`rounded-lg border px-3 py-3 text-center text-base font-medium ${
                   activeHref === item.href
                     ? "border-[#7a5548] bg-[#7a5548] text-[#fffaf3]"
                     : "border-[#ead1ca] bg-[#fff6ee] text-[#7a5548]"

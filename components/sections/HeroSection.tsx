@@ -21,10 +21,12 @@ export function HeroSection() {
               <p className="text-base leading-7 text-[#7a5548]">{heroCopy.sub}</p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="#today-open"
+                  href={storeInfo.instagram}
+                  target="_blank"
+                  rel="noreferrer"
                   className="rounded-lg bg-[#7a5548] px-6 py-3 text-base font-medium text-[#fffaf3] transition hover:opacity-90"
                 >
-                  本日の営業を見る
+                  Instagramで見る
                 </Link>
                 <Link
                   href={storeInfo.instagram}
@@ -32,7 +34,7 @@ export function HeroSection() {
                   rel="noreferrer"
                   className="rounded-lg border border-[#7a5548] bg-[#fffaf3]/90 px-6 py-3 text-base font-medium text-[#7a5548] transition hover:bg-[#fff3e9]"
                 >
-                  Instagramで見る
+                  予約・問い合わせ
                 </Link>
               </div>
             </div>

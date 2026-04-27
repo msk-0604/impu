@@ -8,7 +8,7 @@ export function GiftReservationSection() {
       <div className="mx-auto w-full max-w-6xl rounded-lg border border-[#e8d8ce] bg-[#fffaf3] p-6 md:p-9 shadow-sm">
         <SectionTitle
           title="ギフト・ご予約について"
-          description="焼き菓子の詰め合わせやご予約については、InstagramのDMよりご相談いただけます。"
+          description="焼き菓子の詰め合わせやギフトのご相談はInstagramのDMより承っております。"
         />
         <Link
           href={storeInfo.instagram}

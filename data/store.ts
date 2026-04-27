@@ -36,7 +36,7 @@ export const brandStory = {
 
 export const heroCopy = {
   catch: "丁寧に焼き上げた、日常に寄り添う焼き菓子",
-  sub: "焼き菓子とケーキのお店 Impulsion",
+  sub: "営業日・販売商品・売り切れ情報はInstagramで随時更新しています。",
 };
 
 export const businessNotice = {
