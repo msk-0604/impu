@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section id="top" className="px-5 pt-5 pb-12 md:px-10 md:pt-9 md:pb-14">
       <div className="mx-auto w-full max-w-6xl overflow-hidden rounded-[28px] border border-[#e8d8ce] bg-[#fffaf3] shadow-[0_24px_60px_rgba(63,45,40,0.14)]">
-        <div className="relative h-[560px] md:h-[680px]">
+        <div className="relative h-[500px] md:h-[660px]">
           <Image
             src="/images/hero-sweets.svg"
             alt="Impulsion の焼き菓子とケーキ"
@@ -17,7 +17,11 @@ export function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#fffaf3]/96 via-[#fffaf3]/64 to-[#fffaf3]/16" />
           <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
             <div className="max-w-xl space-y-5">
-              <h1 className="text-3xl leading-tight font-semibold text-[#3f2d28] md:text-5xl">{heroCopy.catch}</h1>
+              <h1 className="text-[1.68rem] leading-snug font-semibold tracking-[0.01em] text-[#3f2d28] sm:text-[1.85rem] md:text-[2.65rem] md:leading-snug">
+                <span className="block md:inline">丁寧に焼き上げた、</span>
+                <span className="block md:inline">日常に寄り添う</span>
+                <span className="block md:inline">焼き菓子</span>
+              </h1>
               <p className="text-base leading-7 text-[#7a5548]">{heroCopy.sub}</p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -37,6 +41,9 @@ export function HeroSection() {
                   予約・問い合わせ
                 </Link>
               </div>
+              <p className="text-[13px] leading-6 text-[#7a5548] md:text-sm">
+                ※数量限定のため、売り切れ次第終了となります。
+              </p>
             </div>
           </div>
         </div>
